@@ -1,0 +1,15 @@
+Source: dorian
+Section: mail
+Priority: extra
+Maintainer: Charles Blundell <cb+dorian@glia.me.uk>
+Build-Depends: debhelper (>= 5), 9base, libgdbm-dev, libspf2-dev
+Standards-Version: 3.8.3.0
+
+Package: dorian
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, postfix
+Description: SPF and grey listing for Postfix
+ dorian implements SPF and grey listing.  It has
+ a smaller memory footprint than perl- and python-based
+ implementations
+
