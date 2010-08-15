@@ -25,7 +25,9 @@ spf: spf.o mkfile
 
 install:V:
     install -d -m 755 $DESTDIR/usr/bin
-    install -m 511 grey     $DESTDIR/usr/bin/dorian-grey
+    install -d -m 755 $DESTDIR/usr/sbin
+    install -d -m 750 $DESTDIR/var/lib/dorian
     install -m 511 list     $DESTDIR/usr/bin/dorian-list
-    install -m 511 cleanup  $DESTDIR/usr/bin/dorian-cleanup
-    install -m 511 spf      $DESTDIR/usr/bin/dorian-spf
+    install -m 511 grey     $DESTDIR/usr/sbin/dorian-grey
+    install -m 511 spf      $DESTDIR/usr/sbin/dorian-spf
+    install -m 511 cleanup  $DESTDIR/usr/sbin/dorian-cleanup

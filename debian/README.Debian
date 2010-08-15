@@ -1,6 +1,6 @@
 dorian for Debian
 -----------------
 
-<possible notes regarding this package - if none, delete this file>
+This package creates a cron job that automatically cleans up the database but
+it does not create the database nor configure postfix for you.
 
- -- Charles Blundell <cb+dorian@glia.me.uk>  Sun, 24 Feb 2008 22:10:04 +0000

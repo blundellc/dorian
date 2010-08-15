@@ -1,4 +1,4 @@
 #
 # Regular cron jobs for the dorian package
 #
-0 4	* * *	dorian	/opt/dorian/bin/dorian/cleanup
+16 18	8 * *	dorian	test -x /usr/bin/dorian-cleanup && /usr/bin/dorian-cleanup
